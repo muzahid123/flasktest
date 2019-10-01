@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Read Files</title>
+<style>
+</style>
+</head>
+<body>
+
+<h1>Here is the files</h1>
+<ul>
+	<li><a href="/?file=file1.txt&start=1&end=12">File 1</a></li>
+</ul>
+<br>
+
+<div style="margin-top:100px">
+{% for txt in text %}
+  <h4>{{ txt }}</h4>
+  {% endfor %}
+</div>
+<div style="margin-top:100px">
+{% for error in errors %}
+  <h4>{{ error }}</h4>
+  {% endfor %}
+</div>
+</body>
+</html>
+
+
+
+
